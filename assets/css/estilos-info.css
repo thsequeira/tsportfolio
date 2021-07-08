@@ -452,28 +452,3 @@ h1, h2, h3, h4, h5, h6 {
     }
     
 }
-
-@media screen and (min-width: 330px) {
-
-    .modelo {
-        font-size: 1px;
-    }
-
-    .img-sobremi{
-        width: 120px;
-        height: 120px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-    }
-
-    .img-sobremi img{
-        width: 120px;
-        height: 120px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100%;
-    }
-}
