@@ -37,22 +37,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 15px;
 }
 
-.texto-celeste {
-    font-weight: 700;
-    color: #a5a58d;
-}
-
 .texto-fondo{
     font-size: 400px;
     color: #181210;
     font-family: 'Teko', sans-serif;
     position: absolute;
     z-index: 0;
-}
-
-.texto-azul{
-    font-size: 30px;
-    color: #a5a58d;
 }
 
 .texto-blanco {
@@ -126,18 +116,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #D34E24;
 }
 
-.hamburger{
-    background-color: transparent;
-    border: 0;
-    color: #D34E24;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-}
-
-.hamburger:focus{
-    outline: none;
-}
 /* ------------------------- */
 /* Header */
 /* ------------------------- */
@@ -252,22 +230,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Mediaqueries */
 /* ------------------------- */
 @media screen and (max-width: 768px) {
-    .menu {
-        display: none;
-        width: 100%;
-    }
 
-    .menu.show{
-        display: flex;
-    }
-
-    .hamburger{
-        display: block;
-    }
-
-    .menu li a,
-    .menu li.active a {
-        font-size: 18px;
+    .marca p{
+        text-align: center;
+        align-items: center;
+        font-size: 10px;
     }
 
     .contenedor-sobremi{
@@ -288,10 +255,6 @@ h1, h2, h3, h4, h5, h6 {
         height: 40px;
     }
 
-    .modelo {
-        font-size: 40px;
-    }
-
     .informacion-producto {
         position: absolute;
         margin: 0px 30px 0px 30px;
@@ -305,23 +268,6 @@ h1, h2, h3, h4, h5, h6 {
         margin: 3px 750px 3px 0px;
     }
 
-    .portfolio__grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 50px;
-        margin-top: 7px;
-      }
-
-      .icons-proyecto{
-        width: 40px;
-        height: 40px;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        align-items: center;
-        margin: 10px 0 10px 10px;
-    }
-    
     .texto-blanco{
         font-size: 15px;
     }
@@ -344,8 +290,15 @@ h1, h2, h3, h4, h5, h6 {
 
     .social-media{
         position: fixed;
-        top: 75%;
+        top: 90%;
+        text-align: right;
         z-index: 10;
+        font-size: 6px;
+    }
+    
+    .social-media ul li{
+        float: left;
+        margin: 10px;
     }
 
     .texto-sobremi{
@@ -410,37 +363,34 @@ h1, h2, h3, h4, h5, h6 {
 
     .texto-sobremi{
         margin-top: 20px;
+        font-size: 10px;
     }
 
-    .img-thiago-sobremi{
+    .img-sobremi{
         width: 100px;
         height: 100px;
-        border-radius: 100px;
+        margin-top: 35px;
         text-align: center;
         align-items: center;
-        margin: auto;
-        z-index: 99;
+        justify-content: center;
+        position: absolute;
     }
 
-    .icons{
+    .img-sobremi img{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: -50px;
+    }
+
+    .iconos-sobremi img{
         align-items: center;
         text-align: center;
-        display: grid;
-        grid-template-columns: 80px 80px 80px;
-        grid-template-rows: 100px 100px;
-        margin: auto;
-    }
-
-    .icons img{
-        width: 64px;
-    }
-
-    .icons-sobremi img{
-        align-items: center;
-        text-align: center;
-        margin: 15px 15px;
         width: 30px;
         height: 30px;
+        font-size: 2px;
     }
 
     .texto-contacto{
@@ -452,3 +402,4 @@ h1, h2, h3, h4, h5, h6 {
     }
     
 }
+

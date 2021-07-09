@@ -25,18 +25,11 @@ const seccionesPagina = new fullpage('#fullpage', {
 	// ──────────────────────────────────────────────────
 	//   :::::: Slides
 	// ──────────────────────────────────────────────────
-	controlArrows: true, // Flechas del slide
+	controlArrows: false, // Flechas del slide
 	slidesNavigation: false, // Indicadores del slide
 	afterLoad: function(origin, destination){
 		if(destination.anchor == 'contacto'){
 			document.querySelector('.footer h2').style.opacity = 1;
 		}
 	}
-});
-
-const hamburger = document.getElementsById('hamburger');
-const navUL = document.getElementsById('menu');
-
-hamburger.addEventListener('click', () => {
-	navUL.classList.toggle('show');
 });
