@@ -1,5 +1,5 @@
 /* ------------------------- */
-/* Estilos Generales */
+/* general */
 /* ------------------------- */
 
 * {
@@ -53,20 +53,15 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
 }
 
-.texto-blanco {
+.texto-negro {
     font-weight: 700;
     color: #191919;
     position: absolute;
     z-index: 1;
 }
 
-.texto-negro {
-    font-size: 30px;
-	color: #171717;
-}
-
 /* ------------------------- */
-/* Clases de Fullpage.js */
+/* fullpage.js */
 /* ------------------------- */
 #fp-nav ul li a span {
     background: #D34E24;
@@ -81,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------- */
-/* Menu de Navegacion */
+/* nav */
 /* ------------------------- */
 .nav {
     position: fixed;
@@ -123,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #D34E24;
 }
 /* ------------------------- */
-/* Header */
+/* header */
 /* ------------------------- */
 
 .header {
@@ -164,105 +159,31 @@ h1, h2, h3, h4, h5, h6 {
     animation: izq-der 1s ease infinite;
 }
 
-.contenedor-sobremi{
-    display: flex;
-    flex-direction: row;
-    margin: 20px 280px 0px 280px;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-}
-
-.texto-fondo-sobremi{
-    font-size: 400px;
-    color: #f0efeb;
-    font-family: 'Teko', sans-serif;
-    position: absolute;
-    z-index: 0;
-}
-
-.texto-sobremi{
-    margin: 0px 30px 0px 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: #191919;
-    align-items: center;
-}
-
-.icons-sobremi{
-    margin-left: -15px;
-}
-
-.titulo-sobremi{
-    font-size: 30px;
-}
-
-.texto-fondo-habilidades{
-    font-size: 320px;
-    color: #FFF;
-    font-family: 'Teko', sans-serif;
-    position: absolute;
-    z-index: 0;
-}
-
-.texto-icons{
-    align-items: center;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #191919;
-    font-weight: 700;
-}
-
-.texto-contacto{
-    text-align: center;
-    align-items: center;
-    color: #191919;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    margin: 20px 400px;
-    z-index: 1;
-}
-
-.icons-contactame{
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-}
-
-.icons-contactame img{
-    margin: 0px 20px;
-    position: absolute;
-    z-index: 1;
-}
 /* ------------------------- */
-/* Productos */
+/* projects */
 /* ------------------------- */
-.productos article { 
+.proyectos article { 
     background-position: center;
     background-size: cover;
 }
 
-.productos article:nth-child(1) {
+.proyectos article:nth-child(1) {
     background-color: #fff;
 }
 
-.productos article:nth-child(2) {
+.proyectos article:nth-child(2) {
     background-image: url(../media/proyecto-1.jpg);
 }
 
-.productos article:nth-child(3) {
+.proyectos article:nth-child(3) {
     background-image: url(../media/proyecto-2.jpg);
 }
 
-.productos .informacion-producto {
+.proyectos .informacion-proyectos {
     margin: 20px 30px;
 }
 
-.productos .informacion-producto::before {
+.proyectos .informacion-proyectos::before {
     content: "";
     height: 50px;
     width: 2px;
@@ -305,21 +226,59 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
 }
 
-.productos .modelo {
+.proyectos .modelo {
     font-size: 45px;
 }
 
-.productos .precio {
-    font-size: 25px;
+/* ------------------------- */
+/* contact */
+/* ------------------------- */
+
+.texto-icons{
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #191919;
+    font-weight: 700;
 }
 
-.productos .precio::before {
-    content: "$";
-    display: inline-block;
+.texto-contacto{
+    text-align: center;
+    align-items: center;
+    color: #191919;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px 400px;
+    z-index: 1;
 }
+
+.icons-contactame{
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.icons-contactame img{
+    margin: 0px 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.texto-fondo-contacto{
+    font-size: 320px;
+    color: #FFF;
+    font-family: 'Teko', sans-serif;
+    position: absolute;
+    z-index: 0;
+}
+
 /* ------------------------- */
-/* Clases de fullpage.js - Flechas de Slide */
+/*  fullpage.js - slide */
 /* ------------------------- */
+
 .fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev {
     top: 95%;
@@ -347,8 +306,9 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     margin: 10px 0 10px 50px;
 }
+
 /* ------------------------- */
-/* Animaciones */
+/* animations */
 /* ------------------------- */
 
 @keyframes bajar-subir  {
@@ -364,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------- */
-/* Mediaqueries */
+/* mediaqueries */
 /* ------------------------- */
 @media screen and (max-width: 768px) {
 
@@ -400,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 12px;
     }
 
-    .informacion-producto {
+    .informacion-proyectos {
         margin: -20px 30px 0px 30px;
         background-color: transparent;
     }
@@ -412,14 +372,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .texto-fondo-proyectos{
-        font-size: 90px;
+        font-size: 80px;
         color: #f0efeb;
         font-family: 'Teko', sans-serif;
         position: absolute;
         z-index: 0;
     }
     
-    .texto-blanco{
+    .texto-negro{
         font-size: 15px;
     }
 
@@ -428,11 +388,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .texto-fondo-habilidades{
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .texto-fondo{
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .social-media{
@@ -447,6 +407,16 @@ h1, h2, h3, h4, h5, h6 {
         float: left;
         margin: 10px;
     }
+
+    .modelo img{
+        height: 22px;
+        width: 22px;
+    }
+
+    .informacion-proyectos img{
+        height: 22px;
+        width: 22px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -454,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 30px;
     }
 
-    .informacion-producto {
+    .informacion-proyectos {
         position: absolute;
         top: 67%;
     }

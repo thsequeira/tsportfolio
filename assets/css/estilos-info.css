@@ -1,5 +1,5 @@
 /* ------------------------- */
-/* Estilos Generales */
+/* general */
 /* ------------------------- */
 
 * {
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------- */
-/* Clases de Fullpage.js */
+/* fullpage.js */
 /* ------------------------- */
 #fp-nav ul li a span {
     background: #D34E24;
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------- */
-/* Menu de Navegacion */
+/* nav */
 /* ------------------------- */
 .nav {
     position: fixed;
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------- */
-/* Header */
+/* header */
 /* ------------------------- */
 
 .header {
@@ -148,6 +148,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     animation: bajar-subir 1s ease infinite;
 }
+
+/* ------------------------- */
+/* about */
+/* ------------------------- */
 
 .contenedor-sobremi{
     display: flex;
@@ -217,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------- */
-/* Animaciones */
+/* animations */
 /* ------------------------- */
 
 @keyframes bajar-subir  {
@@ -227,9 +231,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------- */
-/* Mediaqueries */
+/* mediaqueries */
 /* ------------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
 
     .marca p{
         text-align: center;
@@ -245,6 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .texto-sobremi{
         margin-top: 20px;
+        padding: 0 100px;
     }
 
     .icons-sobremi img{
@@ -254,20 +259,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 40px;
         height: 40px;
     }
-
-    .informacion-producto {
-        position: absolute;
-        margin: 0px 30px 0px 30px;
-        background-color: #f4f4f4;
-        z-index: 1;
-    }
-
-    .texto-informativo{
-        font-size: 16px;
-        font-family: 'Roboto';
-        margin: 3px 750px 3px 0px;
-    }
-
+    
     .texto-blanco{
         font-size: 15px;
     }
@@ -277,15 +269,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .texto-fondo-habilidades{
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .texto-fondo{
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .texto-fondo-sobremi{
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .social-media{
@@ -363,6 +355,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .texto-sobremi{
         margin-top: 20px;
+        padding: 0;
         font-size: 10px;
     }
 
